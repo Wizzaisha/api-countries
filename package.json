@@ -1,8 +1,8 @@
 {
   "name": "api-countries",
-  "homepage": "https://github.com/Wizzaisha/api-countries",
+  "homepage": "https://wizzaisha.github.io/api-countries/",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.1",
