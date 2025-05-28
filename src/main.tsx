@@ -3,7 +3,11 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
 
-import { createBrowserRouter, RouterProvider } from "react-router";
+import {
+  createBrowserRouter,
+  createHashRouter,
+  RouterProvider,
+} from "react-router";
 import Module1Page from "./modules/module1/components/Module1Page.tsx";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
@@ -11,7 +15,7 @@ import { store, persistor } from "./modules/core/store/store.ts";
 import CountriesPage from "./modules/countries-page/components/CountriesPage.tsx";
 import CountryDetails from "./modules/countries-page/components/CountryDetails.tsx";
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   [
     {
       path: "/",
