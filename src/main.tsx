@@ -25,10 +25,10 @@ const router = createBrowserRouter(
       path: "/module1",
       element: <Module1Page />,
     },
-  ],
-  {
-    basename: "/api-countries",
-  }
+  ]
+  // {
+  //   basename: "/api-countries",
+  // }
 );
 
 createRoot(document.getElementById("root")!).render(

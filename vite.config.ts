@@ -4,6 +4,5 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "https://wizzaisha.github.io/api-countries/",
   plugins: [react(), tailwindcss()],
 });
