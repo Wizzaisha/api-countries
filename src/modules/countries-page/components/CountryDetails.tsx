@@ -23,7 +23,10 @@ const CountryDetails = () => {
   return (
     <div className="w-full md:pb-20">
       <Link to={"/"}>
-        <button className="btn btn-primary text-base-content w-32">
+        <button
+          type="button"
+          className="btn btn-primary text-base-content w-32"
+        >
           <IoMdArrowBack /> Back
         </button>
       </Link>

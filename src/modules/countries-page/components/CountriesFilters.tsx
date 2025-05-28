@@ -76,7 +76,11 @@ const CountriesFilters = () => {
         ))}
       </select>
 
-      <button className="btn btn-dash" onClick={handleClearFilters}>
+      <button
+        type="button"
+        className="btn btn-dash"
+        onClick={handleClearFilters}
+      >
         <CiFilter /> Clear filters
       </button>
     </div>

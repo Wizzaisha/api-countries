@@ -23,7 +23,11 @@ const ThemeComponent: React.FC = () => {
   };
 
   return (
-    <button onClick={handleToggle} className="btn btn-ghost max-w-md">
+    <button
+      type="button"
+      onClick={handleToggle}
+      className="btn btn-ghost max-w-md"
+    >
       {currentTheme && currentTheme === "dark" ? (
         <>
           <img src={SunIcon} alt="icon" className="w-5"></img>
