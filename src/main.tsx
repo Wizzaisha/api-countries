@@ -11,20 +11,25 @@ import { store, persistor } from "./modules/core/store/store.ts";
 import CountriesPage from "./modules/countries-page/components/CountriesPage.tsx";
 import CountryDetails from "./modules/countries-page/components/CountryDetails.tsx";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      children: [
+        { index: true, Component: CountriesPage },
+        { path: ":countryId", Component: CountryDetails },
+      ],
+    },
+    {
+      path: "/module1",
+      element: <Module1Page />,
+    },
+  ],
   {
-    path: "/",
-    element: <App />,
-    children: [
-      { index: true, Component: CountriesPage },
-      { path: ":countryId", Component: CountryDetails },
-    ],
-  },
-  {
-    path: "/module1",
-    element: <Module1Page />,
-  },
-]);
+    basename: "/api-countries",
+  }
+);
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
