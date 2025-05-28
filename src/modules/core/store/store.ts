@@ -16,7 +16,8 @@ const persistConfig = {
   key: "root",
   storage,
   //List of reducers to persis
-  whitelist: ["module1", "countries"],
+  // whitelist: ["module1", "countries"],
+  whitelist: ["module1"],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

@@ -76,13 +76,13 @@
 .text-preset5-regular {
   font-size: 14px;
   letter-spacing: 0;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .text-preset5-light {
   font-size: 14px;
   letter-spacing: 0;
-  font-weight: lighter;
+  font-weight: normal;
 }
 
 .text-preset4-bold {

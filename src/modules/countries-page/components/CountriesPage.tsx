@@ -9,7 +9,6 @@ const CountriesPage = () => {
   const { getStatusAllContries } = useAppSelector((state) => state.countries);
 
   useEffect(() => {
-    console.log(getStatusAllContries);
     if (getStatusAllContries === "idle") {
       dispatch(getAllCountries());
     }
